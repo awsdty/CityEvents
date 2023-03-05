@@ -1,0 +1,201 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CityEvents.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1500" d:DesignHeight="800"
+		Width="1500" Height="800"
+        x:Class="CityEvents.Views.MainWindow"
+		xmlns:local="clr-namespace:CityEvents.Models"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="CityEvents">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	
+	<Window.Resources>
+		<vm:BitmapAssetValueConverter x:Key="variableImage"/>
+	</Window.Resources>
+
+	<Window.DataTemplates>
+		<DataTemplate DataType="{x:Type local:CityEvent}">
+			<Border  BorderBrush="Black" BorderThickness="2" Margin="3">
+				<Grid RowDefinitions="200, 300" ColumnDefinitions="350">
+					<Image Grid.Row="0" Height="200" Width="200" Source="{Binding Image, Converter={StaticResource variableImage}}"></Image>
+					<StackPanel Grid.Row="1">
+						<Border  BorderThickness="2" Margin="3">
+							<TextBlock FontWeight="Bold" FontSize="15" Text="{Binding Header}"></TextBlock>
+						</Border>
+						<Border  BorderThickness="2" Margin="3">
+							<TextBlock FontWeight="Bold" FontSize="15" Text="{Binding Date}"></TextBlock>
+						</Border>
+						<Border  BorderThickness="2" Margin="3">
+							<TextBlock Text="{Binding Description}" TextWrapping="Wrap"></TextBlock>
+						</Border>
+						<Border  BorderThickness="2" Margin="3">
+							<TextBlock FontWeight="Bold" FontSize="15" Text="{Binding Price}" ></TextBlock>
+						</Border>
+					</StackPanel>
+				</Grid>
+			</Border>
+		</DataTemplate>
+	</Window.DataTemplates>
+
+	<TabControl>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/ForChildren.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Для детей" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+			
+			<ListBox Items="{Binding CustomItems1}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Sport.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Спорт" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+			
+			<ListBox  Items="{Binding CustomItems2}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Culture.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Культура" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Items="{Binding CustomItems3}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Excursions.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Экскурсии" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox  Items="{Binding CustomItems4}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Lifestyle.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Образ жизни" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Items="{Binding CustomItems5}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Party.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Вечеринки" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox  Items="{Binding CustomItems6}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Education.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Образование" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox  Items="{Binding CustomItems7}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Online.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Онлайн" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox  Items="{Binding CustomItems8}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/jpgus/Show.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Шоу" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox  Items="{Binding CustomItems9}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+			
+		</TabItem>
+	</TabControl>
+
+</Window>

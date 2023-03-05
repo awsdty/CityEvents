@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCityEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CityEvent>
+		<Header>Космодрайв</Header>
+		<Description>Выставка космоса для всей семьи Космодрайв в Новосибирске</Description>
+		<Image>../../../Assets/jpgus/1.jpg</Image>
+		<Date>05.03.2023</Date>
+		<Category>1</Category>
+		<Price>649</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Жаворонки</Header>
+		<Description>Будем печь обрядовые булочки, а потом их с пылу, с жару да с чайком…ммм… .вкуснота.</Description>
+		<Image>../../../Assets/jpgus/2.jpg</Image>
+		<Date>18.03.2023</Date>
+		<Category>1</Category>
+		<Price>Бесплатно </Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Страшные сказки в темноте</Header>
+		<Description>Соберёмся за столами в нашей атмосферной трапезной, выключим свет, зажжем маленькие фонарики и будем слушать сказки.</Description>
+		<Image>../../../Assets/jpgus/3.jpg</Image>
+		<Date>11.03.2023</Date>
+		<Category>1</Category>
+		<Price>Бесплатно </Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Сказка про Умку</Header>
+		<Description>Из нашего детства белый медвежонок Умка — одно из самых ярких воспоминаний.</Description>
+		<Image>../../../Assets/jpgus/4.jpg</Image>
+		<Date>8.04.2023</Date>
+		<Category>1</Category>
+		<Price>500</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Поход на каток</Header>
+		<Description>Проведите весело время всей семьёй</Description>
+		<Image>../../../Assets/jpgus/5.jpg</Image>
+		<Date>12.04.2023</Date>
+		<Category>2</Category>
+		<Price>450</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Пробежка по Бугринской роще</Header>
+		<Description>Прогулка на свежем воздухе</Description>
+		<Image>../../../Assets/jpgus/6.jpg</Image>
+		<Date>25.04.2023</Date>
+		<Category>2</Category>
+		<Price>Бесплатно</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Спектакль «Карлик Нос»</Header>
+		<Description>Мистический спектакль по мотивам одноименной сказки немецкого писателя Вильгельма Гауфа.</Description>
+		<Image>../../../Assets/jpgus/7.jpg</Image>
+		<Date>12.04.2023</Date>
+		<Category>3</Category>
+		<Price>250</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Истории в городе</Header>
+		<Description>ИСТОРИИ В ГОРОДЕ - это сокровенный разговор актёров театральной лаборатории со зрителем в формате сторителлинг.</Description>
+		<Image>../../../Assets/jpgus/8.jpg</Image>
+		<Date>5.04.2023</Date>
+		<Category>3</Category>
+		<Price>449</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Влюбиться в Новосибирск, пешком</Header>
+		<Description>Приглашаю вас на прогулку по Новосибирску! Мы с вами увидим главные достопримечательности, прогуляемся по центру и поговорим о том, как наш прекрасный город стал столицей Сибири.</Description>
+		<Image>../../../Assets/jpgus/9.jpg</Image>
+		<Date>По желанию</Date>
+		<Category>4</Category>
+		<Price>6000</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Винный ужин по мотивам мирового бестселлера "Ешь. Молись. Люби"</Header>
+		<Description>7 марта в Гастроинкубаторе ужин в 4 руки в исполнении шеф-повара с мировым опытом Николая Ильина, а также участника «Молодых ножей» Евгения Лягаева. </Description>
+		<Image>../../../Assets/jpgus/10.jpg</Image>
+		<Date>7.04.2023</Date>
+		<Category>5</Category>
+		<Price>4000</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Диско 90-х</Header>
+		<Description>Супер фестиваль популярной музыки «Диско 90-х» представляет лучшее из золотой коллекции хитов 90-х и 2000-х годов. </Description>
+		<Image>../../../Assets/jpgus/11.jpg</Image>
+		<Date>11.04.2023</Date>
+		<Category>5</Category>
+		<Price>1500</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Диско 90-х</Header>
+		<Description>Супер фестиваль популярной музыки «Диско 90-х» представляет лучшее из золотой коллекции хитов 90-х и 2000-х годов. </Description>
+		<Image>../../../Assets/jpgus/11.jpg</Image>
+		<Date>11.04.2023</Date>
+		<Category>6</Category>
+		<Price>1500</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Винный ужин по мотивам мирового бестселлера "Ешь. Молись. Люби"</Header>
+		<Description>7 марта в Гастроинкубаторе ужин в 4 руки в исполнении шеф-повара с мировым опытом Николая Ильина, а также участника «Молодых ножей» Евгения Лягаева. </Description>
+		<Image>../../../Assets/jpgus/10.jpg</Image>
+		<Date>7.04.2023</Date>
+		<Category>6</Category>
+		<Price>4000</Price>
+		
+	</CityEvent>
+	<CityEvent>
+		<Header>ЛимузинПати</Header>
+		<Description>компания проката лимузинов </Description>
+		<Image>../../../Assets/jpgus/12.jpg</Image>
+		<Date>По желанию</Date>
+		<Category>6</Category>
+		<Price>Договорная</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Человек и Вселенная</Header>
+		<Description>Курс лекций и практических занятий «Философия для жизни. От теории к практике». </Description>
+		<Image>../../../Assets/jpgus/13.jpg</Image>
+		<Date>15.04.2023</Date>
+		<Category>7</Category>
+		<Price>350</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Бесплатный курс по разработке на Go от Академии разработки MediaSoft</Header>
+		<Description>Обучение бесплатное. Курс подойдет тем, кто имеет навыки программирования на любом языке. </Description>
+		<Image>../../../Assets/jpgus/14.jpg</Image>
+		<Date>15.04.2023</Date>
+		<Category>8</Category>
+		<Price>Бесплатно</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Геннадий Пыстин</Header>
+		<Description>Геннадий Пыстин зарекомендовал себя музыкантом универсального масштаба. </Description>
+		<Image>../../../Assets/jpgus/15.jpg</Image>
+		<Date>23.04.2023</Date>
+		<Category>9</Category>
+		<Price>300</Price>
+	</CityEvent>
+</ArrayOfCityEvent>
